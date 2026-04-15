@@ -1,0 +1,98 @@
+[
+  {
+    "id": "RISK_NO_CHINESE",
+    "title": "Limited Chinese ability",
+    "condition": {
+      "chinese_level": ["none", "basic"]
+    },
+    "summary": "You do not speak much Chinese, so destination visibility and communication support matter more for your trip.",
+    "priority_effects": {
+      "boost_categories": ["communication", "transport", "arrival_day"],
+      "boost_tasks": ["T001", "C001", "C002", "C005", "AR005"]
+    }
+  },
+  {
+    "id": "RISK_MULTI_CITY",
+    "title": "Multi-city complexity",
+    "condition": {
+      "cities_count_min": 2
+    },
+    "summary": "You are moving across multiple cities, so transport transitions and booking access matter more than usual.",
+    "priority_effects": {
+      "boost_categories": ["transport", "documents"],
+      "boost_tasks": ["T004", "D003", "D004"]
+    }
+  },
+  {
+    "id": "RISK_FOOD_RESTRICTIONS",
+    "title": "Food and dining constraints",
+    "condition": {
+      "requires_any_of": ["dietary_restrictions", "religion_needs"]
+    },
+    "summary": "You have food-related constraints, so meal planning and communication cards are more important for you.",
+    "priority_effects": {
+      "boost_categories": ["food_culture", "communication"],
+      "boost_tasks": ["F001", "F002"]
+    }
+  },
+  {
+    "id": "RISK_LOW_TECH",
+    "title": "Low technology confidence",
+    "condition": {
+      "tech_comfort": ["low"]
+    },
+    "summary": "You may benefit from fewer tools and clearer sequencing, rather than a large number of apps and options.",
+    "priority_effects": {
+      "boost_categories": ["arrival_day", "payments", "internet"],
+      "reduce_categories": ["apps"]
+    }
+  },
+  {
+    "id": "RISK_SOLO_TRAVEL",
+    "title": "Solo travel responsibility",
+    "condition": {
+      "travel_party": ["solo"]
+    },
+    "summary": "Because you are traveling alone, backup planning and quick access to your key information matter more.",
+    "priority_effects": {
+      "boost_categories": ["emergency", "documents", "accommodation"],
+      "boost_tasks": ["E001", "E002", "H001"]
+    }
+  },
+  {
+    "id": "RISK_FIRST_TIME",
+    "title": "First-time arrival pressure",
+    "condition": {
+      "first_time_in_china": [true]
+    },
+    "summary": "Because this is your first trip to China, arrival-day structure and fallback planning will matter more than optimization.",
+    "priority_effects": {
+      "boost_categories": ["arrival_day", "transport", "internet"],
+      "boost_tasks": ["AR001", "AR002", "AR003", "AR004", "I001", "T002"]
+    }
+  },
+  {
+    "id": "RISK_PAYMENT_ANXIETY",
+    "title": "Payment uncertainty",
+    "condition": {
+      "primary_concerns_contains": ["payments"]
+    },
+    "summary": "You are especially concerned about payments, so it is worth preparing both a main method and a fallback before departure.",
+    "priority_effects": {
+      "boost_categories": ["payments"],
+      "boost_tasks": ["P001", "P002", "P003", "AR006"]
+    }
+  },
+  {
+    "id": "RISK_CONNECTIVITY_ANXIETY",
+    "title": "Connectivity uncertainty",
+    "condition": {
+      "primary_concerns_contains": ["internet"]
+    },
+    "summary": "You are concerned about staying connected, so offline access and a simple internet setup plan should be treated as top priorities.",
+    "priority_effects": {
+      "boost_categories": ["internet", "arrival_day"],
+      "boost_tasks": ["I001", "I002", "I003", "AR002"]
+    }
+  }
+]
