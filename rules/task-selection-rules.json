@@ -1,0 +1,120 @@
+[
+  {
+    "id": "RULE_FIRST_TIME_FOUNDATION",
+    "description": "First-time travelers should see foundational prep tasks and arrival-day structure more prominently.",
+    "when": {
+      "first_time_in_china": true
+    },
+    "effects": {
+      "boost_categories": ["arrival_day", "internet", "transport"],
+      "boost_tasks": ["I001", "I002", "T002", "AR001", "AR002", "AR003", "AR004"],
+      "score_delta": 20
+    }
+  },
+  {
+    "id": "RULE_NO_CHINESE_SUPPORT",
+    "description": "Users with no or basic Chinese should see communication and destination visibility tasks earlier.",
+    "when": {
+      "chinese_level": ["none", "basic"]
+    },
+    "effects": {
+      "boost_categories": ["communication", "transport", "arrival_day"],
+      "boost_tasks": ["T001", "C001", "C002", "C005", "AR005"],
+      "score_delta": 25
+    }
+  },
+  {
+    "id": "RULE_SOLO_BACKUP",
+    "description": "Solo travelers should see backup and recovery tasks earlier.",
+    "when": {
+      "travel_party": ["solo"]
+    },
+    "effects": {
+      "boost_categories": ["emergency", "documents", "accommodation"],
+      "boost_tasks": ["E001", "E002", "H001", "D005"],
+      "score_delta": 15
+    }
+  },
+  {
+    "id": "RULE_FOOD_CONSTRAINTS",
+    "description": "Travelers with dietary or religious needs should see food communication and first-meal prep earlier.",
+    "when": {
+      "requires_any_of": ["dietary_restrictions", "religion_needs"]
+    },
+    "effects": {
+      "boost_categories": ["food_culture", "communication"],
+      "boost_tasks": ["F001", "F002"],
+      "score_delta": 25
+    }
+  },
+  {
+    "id": "RULE_LOW_TECH_SIMPLIFY",
+    "description": "Low-tech users should get fewer app-heavy tasks and clearer essentials.",
+    "when": {
+      "tech_comfort": ["low"]
+    },
+    "effects": {
+      "boost_categories": ["payments", "internet", "arrival_day"],
+      "reduce_categories": ["apps"],
+      "score_delta": 15
+    }
+  },
+  {
+    "id": "RULE_MULTI_CITY_TRANSITIONS",
+    "description": "Multi-city travelers should see transfer and itinerary access tasks.",
+    "when": {
+      "cities_count_min": 2
+    },
+    "effects": {
+      "boost_categories": ["transport", "documents"],
+      "boost_tasks": ["T004", "D003", "D004"],
+      "score_delta": 15
+    }
+  },
+  {
+    "id": "RULE_PAYMENT_CONCERN",
+    "description": "Users concerned about payment should see payment readiness tasks earlier.",
+    "when": {
+      "primary_concerns_contains": ["payments"]
+    },
+    "effects": {
+      "boost_categories": ["payments"],
+      "boost_tasks": ["P001", "P002", "P003", "AR006"],
+      "score_delta": 20
+    }
+  },
+  {
+    "id": "RULE_INTERNET_CONCERN",
+    "description": "Users concerned about internet access should see connectivity and offline-access tasks earlier.",
+    "when": {
+      "primary_concerns_contains": ["internet"]
+    },
+    "effects": {
+      "boost_categories": ["internet", "arrival_day"],
+      "boost_tasks": ["I001", "I002", "I003", "AR002"],
+      "score_delta": 20
+    }
+  },
+  {
+    "id": "RULE_SHORT_TRIP_SIMPLIFY",
+    "description": "Short trips should show fewer optional tasks.",
+    "when": {
+      "trip_length_days_max": 4
+    },
+    "effects": {
+      "reduce_priority": ["optional"],
+      "score_delta": -10
+    }
+  },
+  {
+    "id": "RULE_LONGER_TRIP_ORGANIZATION",
+    "description": "Longer trips benefit from stronger organization and backup tasks.",
+    "when": {
+      "trip_length_days_min": 8
+    },
+    "effects": {
+      "boost_categories": ["documents", "transport", "emergency"],
+      "score_delta": 10
+    }
+  }
+]
