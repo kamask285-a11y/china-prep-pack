@@ -1,0 +1,137 @@
+[
+  {
+    "card_id": "CARD_001",
+    "scenario": "transport",
+    "title": "Show this to your driver",
+    "english_text": "Hello, please take me to this address. Thank you.",
+    "chinese_text": "你好，请带我去这个地址，谢谢。",
+    "notes": "Attach hotel or destination address below in Chinese.",
+    "conditions": { "chinese_level": ["none", "basic"] }
+  },
+  {
+    "card_id": "CARD_002",
+    "scenario": "hotel",
+    "title": "Hotel check-in",
+    "english_text": "Hello, I have a booking here. I would like to check in.",
+    "chinese_text": "你好，我有预订，我想办理入住。",
+    "notes": "Show together with passport and booking confirmation.",
+    "conditions": { "chinese_level": ["none", "basic"] }
+  },
+  {
+    "card_id": "CARD_003",
+    "scenario": "help",
+    "title": "I need help",
+    "english_text": "Hello, I need some help. Could you please help me?",
+    "chinese_text": "你好，我需要帮助。可以帮帮我吗？",
+    "notes": "Useful in stations, malls, streets, and service counters.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_004",
+    "scenario": "navigation",
+    "title": "Can you tell me how to get there?",
+    "english_text": "Excuse me, how can I get to this place?",
+    "chinese_text": "请问，我怎么去这个地方？",
+    "notes": "Show destination name or map together.",
+    "conditions": { "chinese_level": ["none", "basic"] }
+  },
+  {
+    "card_id": "CARD_005",
+    "scenario": "transport_hotel",
+    "title": "Is this the right hotel or address?",
+    "english_text": "Is this the correct hotel or address?",
+    "chinese_text": "这是正确的酒店或地址吗？",
+    "notes": "Useful when uncertain after arriving nearby.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_006",
+    "scenario": "food",
+    "title": "Ordering food",
+    "english_text": "Hello, I would like to order this. Thank you.",
+    "chinese_text": "你好，我想点这个，谢谢。",
+    "notes": "Useful for simple pointing-and-ordering situations.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_007",
+    "scenario": "food_restriction",
+    "title": "I do not eat pork",
+    "english_text": "I do not eat pork.",
+    "chinese_text": "我不吃猪肉。",
+    "notes": "For users with pork restrictions.",
+    "conditions": { "dietary_restrictions_contains": ["no_pork", "pork_free"] }
+  },
+  {
+    "card_id": "CARD_008",
+    "scenario": "food_restriction",
+    "title": "I am vegetarian",
+    "english_text": "I am vegetarian. I do not eat meat.",
+    "chinese_text": "我是素食者，我不吃肉。",
+    "notes": "Can be shown before ordering.",
+    "conditions": { "dietary_restrictions_contains": ["vegetarian"] }
+  },
+  {
+    "card_id": "CARD_009",
+    "scenario": "food_restriction",
+    "title": "I need halal food",
+    "english_text": "I need halal food. Do you have a halal option?",
+    "chinese_text": "我需要清真食物。你们有清真餐吗？",
+    "notes": "Important for Muslim travelers.",
+    "conditions": { "religion_needs_contains": ["muslim", "halal"] }
+  },
+  {
+    "card_id": "CARD_010",
+    "scenario": "food_safety",
+    "title": "I cannot eat this ingredient",
+    "english_text": "I cannot eat this ingredient. Please help me avoid it.",
+    "chinese_text": "我不能吃这种食材，请帮我避免。",
+    "notes": "Should allow variable ingredient insertion later.",
+    "conditions": { "requires_any_of": ["dietary_restrictions", "religion_needs"] }
+  },
+  {
+    "card_id": "CARD_011",
+    "scenario": "basic_needs",
+    "title": "Where is the toilet?",
+    "english_text": "Excuse me, where is the toilet?",
+    "chinese_text": "请问，洗手间在哪里？",
+    "notes": "High practical value, low complexity.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_012",
+    "scenario": "transport",
+    "title": "Where is the metro station?",
+    "english_text": "Excuse me, where is the metro station?",
+    "chinese_text": "请问，地铁站在哪里？",
+    "notes": "Can be templated for train station, bus stop, or airport rail.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_013",
+    "scenario": "payment",
+    "title": "My payment is not working",
+    "english_text": "Sorry, my payment is not working. Can I try another way?",
+    "chinese_text": "不好意思，我的支付不能用。我可以换一种方式吗？",
+    "notes": "Very useful in real-life stress moments.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_014",
+    "scenario": "connectivity",
+    "title": "Do you have Wi-Fi?",
+    "english_text": "Do you have Wi-Fi?",
+    "chinese_text": "你们有 Wi‑Fi 吗？",
+    "notes": "Useful at hotel, café, and restaurant.",
+    "conditions": { "all_users": true }
+  },
+  {
+    "card_id": "CARD_015",
+    "scenario": "communication",
+    "title": "Please speak slowly",
+    "english_text": "Sorry, I don’t speak much Chinese. Please speak slowly.",
+    "chinese_text": "对不起，我不太会说中文，请说慢一点。",
+    "notes": "Very useful in hotel, taxi, and service situations.",
+    "conditions": { "chinese_level": ["none", "basic"] }
+  }
+]
