@@ -1,0 +1,245 @@
+{
+  "profile_summary": "This trip profile suggests that practical readiness matters more than over-planning. Because this is your first time in China and you do not speak much Chinese, transport, communication, and backup access to key information should be your top priorities. Focus on a few high-value preparations before departure so your first day feels much more manageable.",
+  "top_risks": [
+    "Because this is your first trip to China, your arrival-day structure matters more than optimization.",
+    "Since you do not speak much Chinese, destination visibility and communication support will reduce a lot of small travel friction.",
+    "Because you are especially concerned about payments, it is worth setting up both a main option and a backup before departure."
+  ],
+  "critical_tasks": [
+    {
+      "id": "P001",
+      "title": "Decide your main payment method",
+      "category": "payments",
+      "priority": "critical",
+      "recommended_timing": "1 week before departure",
+      "why_it_matters": "Payment is one of the most important travel basics.",
+      "risk_if_missing": "Daily friction and uncertainty.",
+      "fallback_option": "Use a backup card or emergency cash."
+    },
+    {
+      "id": "P002",
+      "title": "Prepare a backup payment method",
+      "category": "payments",
+      "priority": "critical",
+      "recommended_timing": "1 week before departure",
+      "why_it_matters": "Your main method may fail unexpectedly.",
+      "risk_if_missing": "You may get stuck during transport or meals.",
+      "fallback_option": "Carry a second card and some cash."
+    },
+    {
+      "id": "I001",
+      "title": "Decide your internet access plan",
+      "category": "internet",
+      "priority": "critical",
+      "recommended_timing": "1 week before departure",
+      "why_it_matters": "You need connectivity for maps, bookings, and communication.",
+      "risk_if_missing": "Arrival becomes much harder.",
+      "fallback_option": "Use airport or hotel Wi-Fi temporarily."
+    },
+    {
+      "id": "T001",
+      "title": "Save your hotel address in Chinese",
+      "category": "transport",
+      "priority": "critical",
+      "recommended_timing": "1-2 days before departure",
+      "why_it_matters": "One of the most useful tools for first arrival.",
+      "risk_if_missing": "Miscommunication with drivers or helpers.",
+      "fallback_option": "Screenshot hotel booking page."
+    },
+    {
+      "id": "T002",
+      "title": "Plan your airport-to-hotel route",
+      "category": "transport",
+      "priority": "critical",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Arrival is stressful, and deciding on the spot is harder.",
+      "risk_if_missing": "Delays, confusion, and a worse first impression.",
+      "fallback_option": "Ask airport service staff."
+    },
+    {
+      "id": "C001",
+      "title": "Prepare a taxi or driver card",
+      "category": "communication",
+      "priority": "critical",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Very high real-world utility.",
+      "risk_if_missing": "Misunderstandings during transport.",
+      "fallback_option": "Show hotel booking page."
+    },
+    {
+      "id": "E001",
+      "title": "Prepare an emergency fallback plan",
+      "category": "emergency",
+      "priority": "critical",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Recovery matters as much as preparation.",
+      "risk_if_missing": "Small failures can become major stress.",
+      "fallback_option": "Keep paper backups and hotel contact."
+    }
+  ],
+  "important_tasks": [
+    {
+      "id": "D004",
+      "title": "Save hotel confirmations offline",
+      "category": "documents",
+      "priority": "important",
+      "recommended_timing": "3 days before departure",
+      "why_it_matters": "Needed for arrival, check-in, and taxi support.",
+      "risk_if_missing": "Harder check-in or transport coordination.",
+      "fallback_option": "Save screenshots in phone gallery."
+    },
+    {
+      "id": "D005",
+      "title": "Create one offline travel folder",
+      "category": "documents",
+      "priority": "important",
+      "recommended_timing": "1-2 days before departure",
+      "why_it_matters": "Keeps key materials in one place during stressful moments.",
+      "risk_if_missing": "Slow retrieval of important info.",
+      "fallback_option": "Use a dedicated photo album for screenshots."
+    },
+    {
+      "id": "A002",
+      "title": "Know what each app is for",
+      "category": "apps",
+      "priority": "important",
+      "recommended_timing": "2-3 days before departure",
+      "why_it_matters": "Too many unfamiliar apps create confusion.",
+      "risk_if_missing": "You may open the wrong tool in urgent moments.",
+      "fallback_option": "Keep a simple app cheat sheet."
+    },
+    {
+      "id": "H001",
+      "title": "Save hotel name, address, and phone",
+      "category": "accommodation",
+      "priority": "important",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Needed for check-in, taxi, and problem recovery.",
+      "risk_if_missing": "Harder to reach and confirm your hotel.",
+      "fallback_option": "Save screenshots from booking platform."
+    },
+    {
+      "id": "C002",
+      "title": "Prepare a hotel check-in card",
+      "category": "communication",
+      "priority": "important",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Reduces stress at arrival.",
+      "risk_if_missing": "Slower communication at front desk.",
+      "fallback_option": "Use passport and reservation screenshot."
+    },
+    {
+      "id": "C005",
+      "title": "Prepare a please-speak-slowly card",
+      "category": "communication",
+      "priority": "important",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Useful across many service scenarios.",
+      "risk_if_missing": "Harder to control fast conversations.",
+      "fallback_option": "Repeat with gestures or translation."
+    },
+    {
+      "id": "E002",
+      "title": "Share your itinerary with someone you trust",
+      "category": "emergency",
+      "priority": "important",
+      "recommended_timing": "before departure",
+      "why_it_matters": "Helpful if you need support from afar.",
+      "risk_if_missing": "Others cannot help easily.",
+      "fallback_option": "Email itinerary to yourself and one contact."
+    }
+  ],
+  "optional_tasks": [
+    {
+      "id": "A001",
+      "title": "Install your core travel apps",
+      "category": "apps",
+      "priority": "optional",
+      "recommended_timing": "3-7 days before departure",
+      "why_it_matters": "Installing too late adds stress.",
+      "risk_if_missing": "Delays during essential tasks.",
+      "fallback_option": "Use browser or ask for help."
+    },
+    {
+      "id": "F002",
+      "title": "Plan your first easy meal",
+      "category": "food_culture",
+      "priority": "optional",
+      "recommended_timing": "1 day before departure",
+      "why_it_matters": "Arrival day is not the best time for complex food decisions.",
+      "risk_if_missing": "Hunger plus decision fatigue.",
+      "fallback_option": "Ask hotel staff for something simple nearby."
+    }
+  ],
+  "arrival_guide": [
+    {
+      "id": "ARRIVAL_BEFORE_LANDING",
+      "stage": "before_landing",
+      "title": "Before landing",
+      "body": "Before the plane lands, review your first three steps: confirm internet access, open your hotel information, and know how you plan to get to your hotel."
+    },
+    {
+      "id": "ARRIVAL_AIRPORT_CONNECTIVITY",
+      "stage": "airport",
+      "title": "At the airport",
+      "body": "As early as possible after landing, confirm that your phone and internet plan are working. If they are not, use airport Wi-Fi or ask at a service desk."
+    },
+    {
+      "id": "ARRIVAL_OPEN_HOTEL_INFO",
+      "stage": "airport",
+      "title": "Keep your hotel details ready",
+      "body": "Before leaving the airport, open your hotel booking, address, and phone number so you can show them quickly if needed."
+    },
+    {
+      "id": "ARRIVAL_CHOOSE_TRANSPORT",
+      "stage": "airport",
+      "title": "Choose transport before you exit",
+      "body": "Decide how you will get to your hotel before you leave the airport area. Making the decision earlier reduces confusion and stress."
+    },
+    {
+      "id": "ARRIVAL_SHOW_ADDRESS",
+      "stage": "transport_to_hotel",
+      "title": "Show your destination clearly",
+      "body": "Keep your hotel or destination address visible on your phone so you can show it quickly during your first ride."
+    }
+  ],
+  "communication_cards": [
+    {
+      "card_id": "CARD_001",
+      "scenario": "transport",
+      "title": "Show this to your driver",
+      "english_text": "Hello, please take me to this address. Thank you.",
+      "chinese_text": "你好，请带我去这个地址，谢谢。",
+      "notes": "Attach hotel or destination address below in Chinese."
+    },
+    {
+      "card_id": "CARD_002",
+      "scenario": "hotel",
+      "title": "Hotel check-in",
+      "english_text": "Hello, I have a booking here. I would like to check in.",
+      "chinese_text": "你好，我有预订，我想办理入住。",
+      "notes": "Show together with passport and booking confirmation."
+    },
+    {
+      "card_id": "CARD_003",
+      "scenario": "help",
+      "title": "I need help",
+      "english_text": "Hello, I need some help. Could you please help me?",
+      "chinese_text": "你好，我需要帮助。可以帮帮我吗？",
+      "notes": "Useful in stations, malls, streets, and service counters."
+    },
+    {
+      "card_id": "CARD_015",
+      "scenario": "communication",
+      "title": "Please speak slowly",
+      "english_text": "Sorry, I don’t speak much Chinese. Please speak slowly.",
+      "chinese_text": "对不起，我不太会说中文，请说慢一点。",
+      "notes": "Very useful in hotel, taxi, and service situations."
+    }
+  ],
+  "warnings": [
+    "Do not rely on only one payment method.",
+    "Keep your hotel address easy to show on your phone.",
+    "Keep your first day simple rather than trying to optimize everything at once."
+  ]
+}
