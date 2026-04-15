@@ -1,0 +1,66 @@
+[
+  {
+    "id": "CARD_RULE_NO_CHINESE_CORE",
+    "description": "Users with no or basic Chinese should always receive core communication cards.",
+    "when": {
+      "chinese_level": ["none", "basic"]
+    },
+    "include_cards": ["CARD_001", "CARD_002", "CARD_003", "CARD_004", "CARD_015"]
+  },
+  {
+    "id": "CARD_RULE_ALL_USERS_BASICS",
+    "description": "All users can receive a small set of universally useful cards.",
+    "when": {
+      "all_users": true
+    },
+    "include_cards": ["CARD_003", "CARD_011", "CARD_012", "CARD_013", "CARD_014"]
+  },
+  {
+    "id": "CARD_RULE_PORK_RESTRICTION",
+    "description": "Users with pork restrictions should receive the no-pork card.",
+    "when": {
+      "dietary_restrictions_contains": ["no_pork", "pork_free"]
+    },
+    "include_cards": ["CARD_007"]
+  },
+  {
+    "id": "CARD_RULE_VEGETARIAN",
+    "description": "Vegetarian users should receive the vegetarian card.",
+    "when": {
+      "dietary_restrictions_contains": ["vegetarian"]
+    },
+    "include_cards": ["CARD_008"]
+  },
+  {
+    "id": "CARD_RULE_HALAL",
+    "description": "Muslim or halal-needs users should receive the halal card.",
+    "when": {
+      "religion_needs_contains": ["muslim", "halal"]
+    },
+    "include_cards": ["CARD_009"]
+  },
+  {
+    "id": "CARD_RULE_GENERIC_FOOD_CONSTRAINTS",
+    "description": "Users with food-related constraints should receive the generic ingredient avoidance card.",
+    "when": {
+      "requires_any_of": ["dietary_restrictions", "religion_needs"]
+    },
+    "include_cards": ["CARD_010"]
+  },
+  {
+    "id": "CARD_RULE_PAYMENT_CONCERN",
+    "description": "Users concerned about payment should receive the payment problem card.",
+    "when": {
+      "primary_concerns_contains": ["payments"]
+    },
+    "include_cards": ["CARD_013"]
+  },
+  {
+    "id": "CARD_RULE_INTERNET_CONCERN",
+    "description": "Users concerned about internet should receive the Wi-Fi card.",
+    "when": {
+      "primary_concerns_contains": ["internet"]
+    },
+    "include_cards": ["CARD_014"]
+  }
+]
