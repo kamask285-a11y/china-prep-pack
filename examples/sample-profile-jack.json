@@ -1,0 +1,13 @@
+{
+  "nationality": "US",
+  "language": "en",
+  "first_time_in_china": true,
+  "trip_length_days": 10,
+  "cities": ["Beijing", "Shanghai", "Chengdu"],
+  "travel_party": "solo",
+  "chinese_level": "none",
+  "tech_comfort": "high",
+  "dietary_restrictions": [],
+  "religion_needs": [],
+  "primary_concerns": ["payments", "transport", "language"]
+}
