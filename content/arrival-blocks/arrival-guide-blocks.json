@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ARRIVAL_BEFORE_LANDING",
+    "stage": "before_landing",
+    "title": "Before landing",
+    "body": "Before the plane lands, review your first three steps: confirm internet access, open your hotel information, and know how you plan to get to your hotel.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["AR001", "I001", "T002"]
+  },
+  {
+    "id": "ARRIVAL_AIRPORT_CONNECTIVITY",
+    "stage": "airport",
+    "title": "At the airport",
+    "body": "As early as possible after landing, confirm that your phone and internet plan are working. If they are not, use airport Wi-Fi or ask at a service desk.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["AR002", "I002", "I003"]
+  },
+  {
+    "id": "ARRIVAL_OPEN_HOTEL_INFO",
+    "stage": "airport",
+    "title": "Keep your hotel details ready",
+    "body": "Before leaving the airport, open your hotel booking, address, and phone number so you can show them quickly if needed.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["AR003", "H001", "D004"]
+  },
+  {
+    "id": "ARRIVAL_CHOOSE_TRANSPORT",
+    "stage": "airport",
+    "title": "Choose transport before you exit",
+    "body": "Decide how you will get to your hotel before you leave the airport area. Making the decision earlier reduces confusion and stress.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["AR004", "T002"]
+  },
+  {
+    "id": "ARRIVAL_SHOW_ADDRESS",
+    "stage": "transport_to_hotel",
+    "title": "Show your destination clearly",
+    "body": "Keep your hotel or destination address visible on your phone so you can show it quickly during your first ride.",
+    "conditions": { "chinese_level": ["none", "basic"] },
+    "related_tasks": ["AR005", "T001", "C001"]
+  },
+  {
+    "id": "ARRIVAL_BACKUP_PAYMENT",
+    "stage": "transport_to_hotel",
+    "title": "Keep backup payment ready",
+    "body": "Do not rely on only one payment method during your first transfer. Keep one backup option available in case your main setup does not work.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["AR006", "P001", "P002"]
+  },
+  {
+    "id": "ARRIVAL_AFTER_CHECKIN",
+    "stage": "after_checkin",
+    "title": "Stabilize after check-in",
+    "body": "After you check in, confirm your essentials: internet, hotel details, payment backup, and your plan for the next simple step.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["H001", "E001", "E003"]
+  },
+  {
+    "id": "ARRIVAL_FIRST_MEAL_SIMPLE",
+    "stage": "first_meal",
+    "title": "Keep your first meal simple",
+    "body": "Arrival day is not the best time for a complicated food decision. Choose an easy, low-risk first meal so you can settle in with less stress.",
+    "conditions": { "all_users": true },
+    "related_tasks": ["F002"]
+  },
+  {
+    "id": "ARRIVAL_FOOD_RESTRICTION_REMINDER",
+    "stage": "first_meal",
+    "title": "Use your food communication card",
+    "body": "If you have dietary or religious restrictions, keep your food communication card ready before you order your first meal.",
+    "conditions": { "requires_any_of": ["dietary_restrictions", "religion_needs"] },
+    "related_tasks": ["F001"]
+  },
+  {
+    "id": "ARRIVAL_FIRST_STEP_LIGHT",
+    "stage": "first_local_step",
+    "title": "Keep your first local step light",
+    "body": "If you go out again on the first day, do only one simple local step such as a short walk, a nearby meal, or a basic convenience stop.",
+    "conditions": { "first_time_in_china": [true] },
+    "related_tasks": []
+  },
+  {
+    "id": "ARRIVAL_FIRST_NIGHT_REVIEW",
+    "stage": "first_night",
+    "title": "Review tomorrow before sleeping",
+    "body": "Before sleeping, check your main destination or plan for the next day so your second day starts with less uncertainty.",
+    "conditions": { "all_users": true },
+    "related_tasks": []
+  }
+]
