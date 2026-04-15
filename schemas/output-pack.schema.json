@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://china-prep-pack/schemas/output-pack.schema.json",
+  "title": "OutputPack",
+  "type": "object",
+  "required": [
+    "profile_summary",
+    "top_risks",
+    "critical_tasks",
+    "important_tasks",
+    "optional_tasks",
+    "arrival_guide",
+    "communication_cards",
+    "warnings"
+  ],
+  "properties": {
+    "profile_summary": {
+      "type": "string"
+    },
+    "top_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "critical_tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/taskItem"
+      }
+    },
+    "important_tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/taskItem"
+      }
+    },
+    "optional_tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/taskItem"
+      }
+    },
+    "arrival_guide": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/arrivalBlock"
+      }
+    },
+    "communication_cards": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/cardItem"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {
+    "taskItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "category",
+        "priority",
+        "recommended_timing",
+        "why_it_matters",
+        "risk_if_missing",
+        "fallback_option"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "priority": { "type": "string", "enum": ["critical", "important", "optional"] },
+        "recommended_timing": { "type": "string" },
+        "why_it_matters": { "type": "string" },
+        "risk_if_missing": { "type": "string" },
+        "fallback_option": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "arrivalBlock": {
+      "type": "object",
+      "required": ["id", "stage", "title", "body"],
+      "properties": {
+        "id": { "type": "string" },
+        "stage": { "type": "string" },
+        "title": { "type": "string" },
+        "body": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "cardItem": {
+      "type": "object",
+      "required": ["card_id", "scenario", "title", "english_text", "chinese_text", "notes"],
+      "properties": {
+        "card_id": { "type": "string" },
+        "scenario": { "type": "string" },
+        "title": { "type": "string" },
+        "english_text": { "type": "string" },
+        "chinese_text": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
