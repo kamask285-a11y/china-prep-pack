@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://china-prep-pack/schemas/user-profile.schema.json",
+  "title": "UserProfile",
+  "type": "object",
+  "required": [
+    "language",
+    "first_time_in_china",
+    "trip_length_days",
+    "cities",
+    "travel_party",
+    "chinese_level",
+    "tech_comfort",
+    "dietary_restrictions",
+    "religion_needs",
+    "primary_concerns"
+  ],
+  "properties": {
+    "nationality": {
+      "type": ["string", "null"]
+    },
+    "language": {
+      "type": "string",
+      "enum": ["en"]
+    },
+    "first_time_in_china": {
+      "type": "boolean"
+    },
+    "trip_length_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 60
+    },
+    "cities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "travel_party": {
+      "type": "string",
+      "enum": ["solo", "couple", "family", "friends"]
+    },
+    "chinese_level": {
+      "type": "string",
+      "enum": ["none", "basic", "intermediate", "advanced"]
+    },
+    "tech_comfort": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "dietary_restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "religion_needs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_concerns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["payments", "internet", "transport", "language", "food", "apps", "safety"]
+      }
+    }
+  },
+  "additionalProperties": false
+}
